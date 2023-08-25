@@ -1,0 +1,36 @@
+.nav {
+  height: 72px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.nav > img {
+  height: 35px;
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media (min-width: 768px) {
+  .nav {
+    height: 76px;
+  }
+
+  .nav > img {
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    height: 76px;
+    justify-content: flex-start;
+  }
+
+  .nav > img {
+    height: 40px;
+  }
+}

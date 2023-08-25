@@ -1,3 +1,107 @@
+:root {
+  --color-dark: #121212;
+  --color-light: #f5f5f5;
+  --color-brand: #0a66c2;
+  --color-brand-hover: #004182;
+  --color-text-light: #ffffff;
+  --color-text-neutral: #38434f;
+  --color-text-neutral-variant: #888;
+  --color-text-dark: #000000;
+
+  --color-brand-accent-1: #915907;
+  --color-brand-accent-2: #8f5849;
+  --color-brand-accent-3: #5a6b51;
+  --color-brand-accent-4: #56687a;
+  --color-brand-accent-5: #6e6558;
+  --color-brand-accent-1-on-dark: #f8c77e;
+  --color-brand-accent-2-on-dark: #f2c5b8;
+  --color-brand-accent-3-on-dark: #bdd7b0;
+  --color-brand-accent-4-on-dark: #c0d1e2;
+  --color-brand-accent-5-on-dark: #d6cec2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: 0;
+}
+
 html {
-  background-color: black;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-light);
+}
+
+/* ********* GENERAL STYLES ********* */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+a {
+  color: var(--color-brand);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited,
+  &:visited:hover {
+    color: var(--color-brand);
+  }
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.25;
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
