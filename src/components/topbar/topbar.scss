@@ -1,11 +1,9 @@
 .nav {
   height: 72px;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
 }
 
 .nav > img {

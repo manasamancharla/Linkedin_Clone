@@ -46,7 +46,7 @@ html {
   padding-right: 0.5rem;
 }
 
-a {
+.link {
   color: var(--color-brand);
 
   &:hover {
@@ -56,6 +56,15 @@ a {
   &:visited,
   &:visited:hover {
     color: var(--color-brand);
+  }
+}
+
+.link__variant {
+  color: var(--color-text-neutral);
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-brand-hover);
   }
 }
 

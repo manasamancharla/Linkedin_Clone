@@ -16,19 +16,38 @@ const Footer: React.FC = () => {
             justifyContent: "center",
             gap: ".2rem",
           }}
+          className="link__variant"
         >
           <img src={logo} alt="logo" style={{ height: "12px" }} />
           &copy; 2023
         </Link>
-        <Link to="">About </Link>
-        <Link to="">Accessibility </Link>
-        <Link to="">User Agreement</Link>
-        <Link to="">Privacy Policy </Link>
-        <Link to="">Cookie Policy </Link>
-        <Link to=""> Copyright Policy </Link>
-        <Link to="">Brand Policy </Link>
-        <Link to="">Guest Controls</Link>
-        <Link to="">Community Guidelines</Link>
+        <Link to="" className="link__variant">
+          About
+        </Link>
+        <Link to="" className="link__variant">
+          Accessibility
+        </Link>
+        <Link to="" className="link__variant">
+          User Agreement
+        </Link>
+        <Link to="" className="link__variant">
+          Privacy Policy
+        </Link>
+        <Link to="" className="link__variant">
+          Cookie Policy
+        </Link>
+        <Link to="" className="link__variant">
+          Copyright Policy
+        </Link>
+        <Link to="" className="link__variant">
+          Brand Policy
+        </Link>
+        <Link to="" className="link__variant">
+          Guest Controls
+        </Link>
+        <Link to="" className="link__variant">
+          Community Guidelines
+        </Link>
       </div>
     </>
   );
