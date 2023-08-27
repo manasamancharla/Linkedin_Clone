@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <>
       <div className="footer container">
         <Link
-          to=""
+          to="#"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -21,31 +21,31 @@ const Footer: React.FC = () => {
           <img src={logo} alt="logo" style={{ height: "12px" }} />
           &copy; 2023
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           About
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           Accessibility
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           User Agreement
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           Privacy Policy
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           Cookie Policy
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           Copyright Policy
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           Brand Policy
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           Guest Controls
         </Link>
-        <Link to="" className="link__variant">
+        <Link to="#" className="link__variant">
           Community Guidelines
         </Link>
       </div>
