@@ -1,11 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/login-logo.svg";
 
 import "./footer.scss";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <>
       <div className="footer container">

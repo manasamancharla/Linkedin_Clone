@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Topbar from "../../components/topbar/Topbar";
 import Footer from "../../components/footer/Footer";
 
@@ -7,10 +7,12 @@ import { FcGoogle } from "react-icons/fc";
 
 import "./signup.scss";
 
-const Signup: React.FC = () => {
+const Signup = () => {
+  const [showPassword, setShowPassword] = useState<unknown>(false);
+
   return (
     <>
-      <div className="signup container">
+      <div className="signup ">
         <Topbar />
         <h1>Make the most of your professional life </h1>
 
@@ -31,7 +33,17 @@ const Signup: React.FC = () => {
             <div className="signup__wrapper1__input">
               <label htmlFor="email">Password </label>
               <div className="signup__inputdiv">
-                <input type="password" id="password" />
+                <input
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                />
+                <p
+                  onClick={() => {
+                    setShowPassword(!showPassword);
+                  }}
+                >
+                  {showPassword ? "Hide" : "Show"}
+                </p>
               </div>
             </div>
           </div>

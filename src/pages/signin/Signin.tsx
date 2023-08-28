@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import Topbar from "../../components/topbar/Topbar";
@@ -7,7 +7,9 @@ import { FcGoogle } from "react-icons/fc";
 import hero from "../../assets/login-hero.svg";
 import "./signin.scss";
 
-const Signin: React.FC = () => {
+const Signin = () => {
+  const [showPassword, setShowPassword] = useState<boolean>(false);
+
   return (
     <>
       <div
@@ -38,15 +40,35 @@ const Signin: React.FC = () => {
                     </div>
                   </div>
                   <div className="wrapper1__input">
-                    <label htmlFor="username">Username </label>
+                    <label htmlFor="email">Password </label>
                     <div className="auth__left__inputdiv">
-                      <input type="username" id="username" />
+                      <input
+                        type={showPassword ? "text" : "password"}
+                        id="password"
+                      />
+                      <p
+                        onClick={() => {
+                          setShowPassword(!showPassword);
+                        }}
+                      >
+                        {showPassword ? "Hide" : "Show"}
+                      </p>
                     </div>
                   </div>
                   <div className="wrapper1__input">
-                    <label htmlFor="email">Password </label>
+                    <label htmlFor="email">Confirm Password </label>
                     <div className="auth__left__inputdiv">
-                      <input type="password" id="password" />
+                      <input
+                        type={showPassword ? "text" : "password"}
+                        id="password"
+                      />
+                      <p
+                        onClick={() => {
+                          setShowPassword(!showPassword);
+                        }}
+                      >
+                        {showPassword ? "Hide" : "Show"}
+                      </p>
                     </div>
                   </div>
                 </div>

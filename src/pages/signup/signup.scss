@@ -66,6 +66,16 @@
   height: 23px;
 }
 
+.signup__inputdiv > p {
+  color: var(--color-brand);
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+
 .signup__wrapper2 {
   width: 100%;
   display: flex;
