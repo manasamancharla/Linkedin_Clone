@@ -1,0 +1,73 @@
+.rcard {
+  grid-area: rightside;
+  display: none;
+}
+
+.rcard__titlediv {
+  height: max-content;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  border: none;
+  padding: 12px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+}
+
+.rcard__title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  width: 100%;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 0.4rem;
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+.rcard__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+
+.rcard__list > li {
+  list-style-type: square;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-dark);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+.rcard__list > li > a > div {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-neutral-variant);
+}
+
+.rcard__list > li > a {
+  width: 100%;
+  &:visited {
+    color: var(--color-dark);
+  }
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media (min-width: 1024px) {
+  .rcard {
+    display: block;
+  }
+}

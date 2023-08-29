@@ -1,10 +1,20 @@
-import React from "react";
 import Navbar from "../../components/navbar/Navbar";
+import LeftCard from "../../components/leftcard/LeftCard";
+import Main from "../../components/main/Main";
+import RightCard from "../../components/rightcard/RightCard";
+
+import "./home.scss";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <div className="home">
+        <div className="home__layout">
+          <LeftCard />
+          <Main />
+          <RightCard />
+        </div>
+      </div>
     </>
   );
 };

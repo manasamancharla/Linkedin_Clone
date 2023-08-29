@@ -1,0 +1,68 @@
+.lcard {
+  grid-area: leftside;
+}
+
+.lcard__user {
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  height: max-content;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: box-shadow 83ms;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+}
+
+.lcard__user__info {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 12px 12px 16px;
+  height: 225px;
+}
+
+.background_img {
+  background: url("../../assets/card-bg.svg");
+  background-position: center;
+  background-size: 462px;
+  height: 56px;
+  margin: -12px -12px 0;
+}
+
+.user_img {
+  box-shadow: none;
+  width: 72px;
+  height: 72px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  margin: -38px auto 12px;
+  border-radius: 50%;
+}
+
+.lcard__widget {
+  border-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  padding: 12px;
+  font-size: 12px;
+  display: none;
+  span {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+    svg {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media (min-width: 768px) {
+  .lcard__widget {
+    display: block;
+  }
+}
