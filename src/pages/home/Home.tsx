@@ -8,11 +8,19 @@ import "./home.scss";
 const Home = () => {
   return (
     <>
-      <div className="home">
-        <div className="home__layout">
-          <LeftCard />
-          <Main />
-          <RightCard />
+      <div
+        className="container"
+        style={{ backgroundColor: "var(--color-light)", width: "100%" }}
+      >
+        <Navbar />
+
+        <div style={{ height: "65px", width: "100%" }}></div>
+        <div className="home">
+          <div className="home__layout">
+            <LeftCard />
+            <Main />
+            <RightCard />
+          </div>
         </div>
       </div>
     </>

@@ -12,7 +12,7 @@ const Signup = () => {
 
   return (
     <>
-      <div className="signup ">
+      <div className="signup container">
         <Topbar />
         <h1>Make the most of your professional life </h1>
 
